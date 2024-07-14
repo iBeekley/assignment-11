@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+</head>
+    <div class="text-center card">
+        <h1>Tic-Tac-Toe</h1>
+        <body>
+            <h2 id="display">X's Turn</h2>
+            <center>
+                <table>
+                    <tr>
+                        <td colspan="3">
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="m-5" id="0" onClick="onClick('0')">-</button>
+                        </td>
+                        <td>
+                            <button class="m-5" id="1" onClick="onClick('1')">-</button>
+                        </td>
+                        <td>
+                            <button class="m-5" id="2" onClick="onClick('2')">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="m-5" id="3" onClick="onClick('3')">-</button>
+                        </td>
+                        <td>
+                            <button class="m-5" id="4" onClick="onClick('4')">-</button>
+                        </td>
+                        <td>
+                            <button class="m-5" id="5" onClick="onClick('5')">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="m-5" id="6" onClick="onClick('6')">-</button>
+                        </td>
+                        <td>
+                            <button class="m-5" id="7" onClick="onClick('7')">-</button>
+                        </td>
+                        <td>
+                            <button class="m-5" id="8" onClick="onClick('8')">-</button>
+                        </td>
+                    </tr>
+                </table>
+                <input id="reset" type="button" class="reset btn btn-lg" 
+                           value="RESET"
+                           onClick="reset()" />
+            </center>
+        </body>
+    </div>  
+
+
+    <script src="source.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+</html>
