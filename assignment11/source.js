@@ -14,7 +14,7 @@ function onClick(btnArg){
             spots[btn] = 1;
             turn++;
             if(winCheck('1') == true){
-                display.innerHTML = 'X Wins!'
+                display.innerHTML = 'X Wins!';
             }
         }else{
             here.innerHTML = 'O';
@@ -25,11 +25,22 @@ function onClick(btnArg){
                 display.innerHTML = 'O Wins!'
             }
         }
+        if(drawCheck() != false){ //check for draw each turn as per instructions
+            display.innerHTML = 'Draw!';
+        }
     }else{
         console.log('invalid location');
         return prompt="This is not a valid spot";
     }
     
+}
+
+function drawCheck(){//if there is at least one empty spot, no draw
+    for(let i =0; i < 9; i++){
+        if(spots[i] == 0){
+            return false;
+        }
+    }
 }
 
 function winCheck(symbol) {//checkWin checks all possible win patterns (9) and check per symbol when called to avoid a more complex function
